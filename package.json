@@ -1,0 +1,36 @@
+{
+  "name": "Rest-Server-NodeJs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./App.js",
+    "nodemon": "nodemon ./App.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexisFlores17/Rest-Server-NodeJs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexisFlores17/Rest-Server-NodeJs/issues"
+  },
+  "homepage": "https://github.com/AlexisFlores17/Rest-Server-NodeJs#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^1.25.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "express-validator": "^6.10.0",
+    "google-auth-library": "^7.0.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.0",
+    "nodemon": "^2.0.7",
+    "uuid": "^8.3.2"
+  }
+}
