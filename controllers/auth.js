@@ -50,7 +50,7 @@ const login = async(req, res = response ) =>{
         const token= await generarJWT(usuario.id);
         
         res.json({
-            msg:'Login ok',
+            ok:'Login ok',
             usuario,
             token
         })
@@ -108,8 +108,20 @@ const googleSingin = async( req, res=response ) =>{
 
 }
 
+const renovarToken = async( req, res= response)=>{
+
+    const { usuario } = req;
+
+    const token = await generarJWT( usuario.id);
+    res.json({
+        usuario,
+        token
+    });
+}
+
 
 module.exports ={
     login,
-    googleSingin
+    googleSingin,
+    renovarToken
 }

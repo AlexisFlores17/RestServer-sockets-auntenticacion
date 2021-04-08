@@ -84,7 +84,7 @@ class Server{
     //sockets
 
     sockets(){
-        this.io.on("connection", socketController );
+        this.io.on("connection", (socket) => socketController(socket, this.io));
     }
 
     //Definir metodo para empezar el server
